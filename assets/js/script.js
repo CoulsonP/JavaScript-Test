@@ -39,9 +39,11 @@ document.querySelector ("#questbtn4").onclick = checkQuest1
 function checkQuest1() {
     if(this.value === "true") {
         console.log ("correct")
+        alert("correct")
     }
     else {
         console.log ("incorrect")
+        alert("incorrect")
         timeLeft = timeLeft -15
         time.textContent = timeLeft
     }
@@ -85,9 +87,58 @@ function checkQuest3() {
         timeLeft = timeLeft -15
         time.textContent = timeLeft
     }
-    quest2.setAttribute("class", "hide")
-    quest3.removeAttribute("class", "hide")
+    quest3.setAttribute("class", "hide")
+    quest4.removeAttribute("class", "hide")
 }
+
+document.querySelector ("#fourquestbtn1").onclick = checkQuest4
+document.querySelector ("#fourquestbtn2").onclick = checkQuest4
+document.querySelector ("#fourquestbtn3").onclick = checkQuest4
+document.querySelector ("#fourquestbtn4").onclick = checkQuest4
+
+function checkQuest4() {
+    if(this.value === "true") {
+        console.log ("correct")
+        alert("correct")
+    }
+    else {
+        console.log ("incorrect")
+        alert("incorrect")
+        timeLeft = timeLeft -15
+        time.textContent = timeLeft
+    }
+    quest4.setAttribute("class", "hide")
+    quest5.removeAttribute("class", "hide")
+}
+
+document.querySelector ("#fivequestbtn1").onclick = checkQuest5
+document.querySelector ("#fivequestbtn2").onclick = checkQuest5
+document.querySelector ("#fivequestbtn3").onclick = checkQuest5
+document.querySelector ("#fivequestbtn4").onclick = checkQuest5
+
+function checkQuest5() {
+    if(this.value === "true") {
+        console.log ("correct")
+        alert("correct")
+    }
+    else {
+        console.log ("incorrect")
+        alert("incorrect")
+        timeLeft = timeLeft -15
+        time.textContent = timeLeft
+    }
+    quest5.setAttribute("class", "hide")
+}
+
+
+
+
+
+
+
+
+
+
 
 // at end of check quest 5 set attr hide on quest 5div remove attr hide on last var
 startbtn.onclick = quizStart
