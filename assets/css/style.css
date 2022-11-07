@@ -39,21 +39,17 @@ button {
     transform: translate(-50%, -50%);
     font-size: 22px;
 }
-/* questions are display none so that they can be targeted to be turned off and on */
-/* #quest1, #quest2, #quest3, #quest4, #quest5 {
-    display:none;
-} */
 
 .hide {
     display: none;
 }
 
 #last {
-    display:none;
+    
 }
 /* high scores */
 .scores {
-    display: none;
+   
 }
 /* allows button to be hovered and change color */
 button:hover {
