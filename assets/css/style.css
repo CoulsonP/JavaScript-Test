@@ -31,8 +31,6 @@ button {
 }
 /* first page design */
 #begin {
-    display: flex;
-    flex-direction: column;
     position: absolute;
     align-items: center;
     text-align: center;
@@ -42,21 +40,14 @@ button {
     font-size: 22px;
 }
 /* questions are display none so that they can be targeted to be turned off and on */
-#quest1 {
+/* #quest1, #quest2, #quest3, #quest4, #quest5 {
     display:none;
+} */
+
+.hide {
+    display: none;
 }
-#quest2 {
-    display:none;
-}
-#quest3 {
-    display:none;
-}
-#quest4 {
-    display:none;
-}
-#quest5 {
-    display:none;
-}
+
 #last {
     display:none;
 }
