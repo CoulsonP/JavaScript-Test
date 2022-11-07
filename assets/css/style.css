@@ -1,17 +1,17 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 20px;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+/* changes background of page */
 body {
     background-color: #F4F9E9;
 }
-
+/* changes text on first page */
 p {
     color: #284B63;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 button {
@@ -20,3 +20,53 @@ button {
     color: #153243;
     font-size: 15px;
 }
+/* puts timer in top right and removes bullet point */
+.time {
+    float: right;
+    list-style: none;
+}
+/* boxes position */
+#boxes{
+    position: relative;
+}
+/* first page design */
+#begin {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+}
+/* questions are display none so that they can be targeted to be turned off and on */
+#quest1 {
+    display:none;
+}
+#quest2 {
+    display:none;
+}
+#quest3 {
+    display:none;
+}
+#quest4 {
+    display:none;
+}
+#quest5 {
+    display:none;
+}
+#last {
+    display:none;
+}
+/* high scores */
+.scores {
+    display: none;
+}
+/* allows button to be hovered and change color */
+button:hover {
+    background-color: #6d692d;
+    color: white;
+}
+
