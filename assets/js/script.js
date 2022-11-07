@@ -117,7 +117,11 @@ function checkQuest5() {
         time.textContent = timeLeft
     }
     quest5.setAttribute("class", "hide")
-    yourScore.setAttribute("class", "hide")
+    last.removeAttribute("class", "hide")
+    // stops timer when quiz is finished
+    if (timeLeft > 0) {
+        clearInterval(timerInterval)
+    }
 }
 
 
@@ -130,5 +134,5 @@ function checkQuest5() {
 
 
 
-
+// when start button is selected the timer and quiz start
 startbtn.onclick = quizStart
