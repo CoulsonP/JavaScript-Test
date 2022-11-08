@@ -44,12 +44,9 @@ button {
     display: none;
 }
 
-#last {
-    
-}
 /* high scores */
 .scores {
-   
+   display: none;
 }
 /* allows button to be hovered and change color */
 button:hover {
